@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Car - Chất lượng vượt niềm tin</title>
+  </head>
+  <body>
+    <header class="d-flex align-items-center py-3">
+      <section class="header-logo col-12 col-md-2 text-center">
+        <img
+          src="https://quangninhcars.com/wp-content/uploads/2022/11/logo-1.png"
+          alt="Car-Logo"
+          width="150px"
+        />
+      </section>
+      <section
+        class="header-info col-10 d-none d-md-flex justify-content-sm-end px-2"
+      >
+        <a
+          href="https://goo.gl/maps/USwUeXaQ4vsLysan8"
+          target="_blank"
+          class="header-address me-4"
+        >
+          <i class="bi bi-geo-alt-fill text-success"></i>&ensp;Tổ 89, khu 8, Hà
+          Khẩu, TP. Hạ Long, Quảng Ninh
+        </a>
+        <a href="tel:0904190446" target="_blank" class="header-phone">
+          <i class="bi bi-telephone-fill text-success"></i>&emsp;0904.190.446
+        </a>
+      </section>
+    </header>
+    <main class="car-main row me-0 g-3">
+      <section class="car-tab-left col-12 col-lg-8">
+        <article class="box-img-wrap shadow-sm">
+          <div class="card box-img">
+            <h5 class="card-header fs-6">Hình ảnh của Car</h5>
+            <div class="card-body d-flex flex-wrap">
+              <div class="box-img-tab-1 col-12 col-lg-8">
+                <img
+                  class="rounded-1 img-single"
+                  src="https://quangninhcars.com/wp-content/uploads/2022/11/z3890251155812_a6f09056f8be1ec3c3df7681e610dbef.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="box-img-tab-2 col-12 col-lg-4">
+                <img
+                  class="rounded-1 img-dual"
+                  src="https://quangninhcars.com/wp-content/uploads/2022/11/z3890251171475_10f8e9f6a57b6e190fc0cd16326d3d21.jpg"
+                  alt=""
+                />
+                <img
+                  class="rounded-1 img-dual"
+                  style="margin-top: 9px"
+                  src="https://quangninhcars.com/wp-content/uploads/2022/11/z3890251158323_eab316f5eecc63ee4fa6d368aa28ca26.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="box-car-wrap mt-3 shadow-sm">
+          <div class="card box-car">
+            <div class="card-header d-flex justify-content-between">
+              <div class="box-car-title fs-6 fw-semibold">Xe đang bán</div>
+              <div class="box-car-all fs-6 fw-semibold">
+                Tổng số: <span></span> xe
+              </div>
+            </div>
+            <div class="px-1 py-3">
+              <div class="card-text box-car-list d-flex flex-wrap"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="car-tab-right col-12 col-lg-4">
+        <article class="box-maps-wrap shadow-sm">
+          <div class="card box-maps">
+            <h5 class="card-header fs-6">Bản đồ đường đi</h5>
+            <div class="card-body">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3725.6773876859847!2d106.99205!3d20.965467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf64268517a984262!2sQu%E1%BA%A3ng%20Ninh%20Car!5e0!3m2!1svi!2sus!4v1669945587668!5m2!1svi!2sus"
+                height="415"
+                style="width: 100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="card box-car-side mt-3 d-none d-lg-block">
+            <h5 class="card-header fs-6">Xe bán chạy</h5>
+            <div
+              class="card-text box-car-list d-flex flex-wrap shadow-sm"
+            ></div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="car-popup" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog shadow-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 car-name"></h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body car-popup">
+              <div class="card box-img">
+                <div class="card-body">
+                  <img class="mb-2 rounded-1" src="" alt="" />
+                  <div class="fw-semibold fs-5 gia mb-2">
+                    Giá: <span></span><sup>đ</sup>
+                  </div>
+                  <div class="address">
+                    <i class="bi bi-geo-alt-fill text-success"></i>&ensp;Địa
+                    chỉ: Tổ 89, khu 8, Hà Khẩu, TP. Hạ Long, Quảng Ninh
+                  </div>
+                  <div class="phone my-2">
+                    <i class="bi bi-telephone-fill text-success"></i
+                    >&emsp;0904.190.446
+                  </div>
+                  <div class="card mt-3">
+                    <h5 class="card-header fs-6">Thông số kỹ thuật</h5>
+                    <div class="d-flex flex-wrap">
+                      <div class="popup-info col-12 col-md-6">
+                        <div class="odo">Odo: <span></span></div>
+
+                        <div class="nam-sx">Năm sx: <span></span></div>
+                        <div class="bks">
+                          BKS:
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="popup-info col-12 col-md-6">
+                        <div class="dang-ky">Đăng ký: <span></span></div>
+
+                        <div class="mau">
+                          Màu:
+                          <span></span>
+                        </div>
+
+                        <div class="nhien-lieu">
+                          Nhiên liệu:
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-white mt-4 text-center py-4 shadow-sm mb-1">
+      <section class="footer-logo mb-3">
+        <img
+          src="https://quangninhcars.com/wp-content/uploads/2022/11/logo-1.png"
+          alt="Car-Logo"
+          width="150px"
+        />
+      </section>
+      <section class="footer-wrap mx-2">
+        <span class="fw-semibold">Car</span> -
+        <span
+          >Địa chỉ: Tổ 89, khu 8, Hà Khẩu, TP. Hạ Long, Quảng Ninh. Điện thoại:
+          0904.190.446</span
+        >
+      </section>
+      <section class="copyright-wrap">
+        <span>© Copyright 2022 - Tú</span>
+      </section>
+      <button
+        type="button"
+        class="btn btn-success rounded-circle btn-cart position-fixed"
+        onclick="showFaded()"
+      >
+        <i class="bi bi-car-front-fill"></i>
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          >+1</span
+        >
+      </button>
+      <div class="card box-faded box-hide shadow"></div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
