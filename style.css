@@ -27,6 +27,10 @@ input[type="number"]:disabled {
   background: #fff;
 }
 
+  .car-list {
+    margin-bottom: 10px;
+  }
+
 .car-title {
   color: olive;
 }
@@ -145,9 +149,6 @@ input[type="number"]:disabled {
 }
 
 @media only screen and (max-width: 765px) {
-  .car-list {
-    margin-bottom: 10px;
-  }
   .odo span,
   .bks span {
     padding-left: 80px;
