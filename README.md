@@ -14,7 +14,7 @@ Website giới thiệu / quảng bá hệ thống cửa hàng bán ô tô.
 * Thêm xe vào giỏ hàng cá nhân
 * Lưu trữ dữ liệu giỏ hàng trên máy tính
 
-## Công nghê sử dụng
+## Công nghệ sử dụng
 
 * HTML CSS JavaScript
 * Bootstrap + Flex
