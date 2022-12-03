@@ -19,7 +19,7 @@ fetch(carAPI)
       car["addToCart"] = 1;
       carFromAPI.push(car);
       document.getElementsByClassName("box-car-list")[0].innerHTML += `
-          <div class="car-list-1 col-12 col-md-6 col-lg-4 text-center px-2">
+          <div class="car-list col-12 col-md-6 col-lg-4 text-center px-2">
             <div class="car-info shadow-sm rounded p-2">
             <div class="car-title mb-2 fw-semibold" data-bs-toggle="modal"
         data-bs-target="#car-popup" onclick="showCar(${index})">${car.name}</div>
