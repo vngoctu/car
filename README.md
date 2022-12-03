@@ -27,7 +27,7 @@ Website giới thiệu / quảng bá hệ thống cửa hàng bán ô tô.
 
 https://vngoctu.github.io/car/
 
-## Tấc giả
+## Tác giả
 
 Tú
 
