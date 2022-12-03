@@ -31,8 +31,8 @@ https://vngoctu.github.io/car/
 
 Tú
 
-Facebook: [@Vương Tú](https://www.facebook.com/tucutie)
-Email: [@Vương Ngọc Tú](mailto:ngoctu99qn@gmail.com)
+* Facebook: [@Vương Tú](https://www.facebook.com/tucutie)
+* Email: [@Vương Ngọc Tú](mailto:ngoctu99qn@gmail.com)
 
 ## Bản quyền
 
