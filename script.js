@@ -122,7 +122,6 @@ function showFaded() {
                 </div>
               </div>
             `;
-    });
       cartCount += car.addToCart;
     });
   } else {
