@@ -101,6 +101,7 @@ function addCart(id) {
 }
 
 function showFaded() {
+  let cartCount = 0;
   let boxFaded = document.getElementsByClassName("box-faded")[0];
   if (carList != 0) {
     boxFaded.innerHTML = "";
@@ -122,11 +123,14 @@ function showFaded() {
               </div>
             `;
     });
+      cartCount += car.addToCart;
+    });
   } else {
     boxFaded.innerHTML =
       '<div class="card-body d-flex flex-wrap">Chưa có xe nào trong danh sách đặt';
   }
   document.getElementsByClassName("box-faded")[0].classList.toggle("box-hide");
+  document.getElementsByClassName("badge")[0].textContent = `+${cartCount}`;
 }
 
 function delCart(id) {
