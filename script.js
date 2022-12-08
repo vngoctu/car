@@ -117,7 +117,7 @@ function showFaded() {
                   <div class="input-group input-group-sm mt-2 position-relative">
                     <span class="input-group-text" id="car-side-sl">Số lượng</span>
                     <input type="number" class="form-control car-sl" aria-label="Số lượng" aria-describedby="car-side-sl" value="${car.addToCart}" disabled>
-                    <i class="bi bi-cart4 position-absolute del" onclick="delCart(${index})"></i>
+                    <i class="bi bi-trash3-fill position-absolute del" onclick="delCart(${index})"></i>
                     </div>
                 </div>
               </div>
