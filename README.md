@@ -33,8 +33,3 @@ Tú
 
 * Facebook: [@Vương Tú](https://www.facebook.com/tucutie)
 * Email: [@Vương Ngọc Tú](mailto:ngoctu99qn@gmail.com)
-
-## Bản quyền
-
-* Không bản quyền
-* Website được thiết kế lại từ website [Quảng Ninh Cars](https://quangninhcars.com) , dự án của công ty do Tú phụ trách làm bằng WordPress hoàn thiện.
